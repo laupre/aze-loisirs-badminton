@@ -1,16 +1,7 @@
-AZÉ LOISIRS BADMINTON — VERSION 3
-===================================
+AZÉ LOISIRS BADMINTON — V4
 Version prête pour GitHub Pages.
 
-Le site contient des emplacements prévus pour être complétés plus tard :
-- Actualités
-- Événements
-- Galerie photos
-- Bureau de l'association
-- Calendrier / rencontres
-- Documents
-- Informations pratiques
-- Réseaux sociaux / contact
+Nouvelles rubriques : Club, Agenda, Actualités, Galerie, Association/Bureau, Inscription, Infos pratiques.
+Dossiers préparés pour les futures images : images/club, images/evenements, images/galerie.
 
-Fichiers : index.html, style.css, logo.png
-Le bouton d'inscription utilise le lien HelloAsso fourni.
+Pour publier : remplace index.html et style.css dans ton dépôt GitHub, conserve logo.png et ajoute le dossier images.
