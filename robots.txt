@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://laupre.github.io/aze-loisirs-badminton/sitemap.xml
