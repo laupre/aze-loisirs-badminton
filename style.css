@@ -167,3 +167,123 @@ section{padding:75px 0}
 .practical-grid{grid-template-columns:1fr}
 .practical h2{font-size:26px}
 }
+/* BLOC UNIQUE : ACCUEIL ET PRÉSENTATION DU CLUB */
+
+.intro-fusion {
+background: var(--dark);
+color: #fff;
+}
+
+.fusion-content {
+position: relative;
+z-index: 1;
+padding-top: 75px;
+padding-bottom: 65px;
+}
+
+.fusion-top {
+max-width: 760px;
+}
+
+.fusion-top > p {
+max-width: 650px;
+font-size: 17px;
+line-height: 1.75;
+color: #d7e4ef;
+}
+
+.fusion-top > p strong {
+display: inline;
+color: var(--yellow);
+}
+
+.fusion-bottom {
+margin-top: 75px;
+padding-top: 45px;
+border-top: 1px solid rgba(255,255,255,.22);
+max-width: 950px;
+}
+
+.fusion-bottom .section-label {
+margin-bottom: 22px;
+}
+
+.fusion-bottom h2 {
+color: #fff;
+}
+
+.fusion-bottom h2 em {
+color: var(--yellow);
+}
+
+.fusion-description {
+max-width: 680px;
+margin-top: 25px;
+color: #d7e4ef;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.fusion-values {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin-top: 40px;
+border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.fusion-values > div {
+padding: 22px 20px 0 0;
+border-right: 1px solid rgba(255,255,255,.18);
+}
+
+.fusion-values > div:not(:first-child) {
+padding-left: 20px;
+}
+
+.fusion-values > div:last-child {
+border-right: 0;
+}
+
+.fusion-values h3 {
+font-size: 30px;
+color: var(--yellow);
+margin: 0 0 8px;
+}
+
+.fusion-values p {
+font-size: 12px;
+line-height: 1.6;
+color: #d7e4ef;
+margin: 0;
+}
+
+@media (max-width: 820px) {
+.fusion-content {
+padding-top: 50px;
+padding-bottom: 45px;
+}
+
+```
+.fusion-bottom {
+    margin-top: 50px;
+    padding-top: 35px;
+}
+
+.fusion-values {
+    grid-template-columns: 1fr;
+}
+
+.fusion-values > div,
+.fusion-values > div:not(:first-child) {
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.fusion-values > div:last-child {
+    border-bottom: 0;
+}
+```
+
+}
+
