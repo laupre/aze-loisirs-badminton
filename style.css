@@ -125,14 +125,10 @@ footer{background:#041f3a;color:#aabed0;padding:30px 0}
 .club-name{display:inline-block;margin-bottom:18px;font-family:"Barlow Condensed",Impact,sans-serif;font-size:clamp(38px,6vw,72px);line-height:.9;font-weight:800;letter-spacing:-.025em;color:#fff;text-transform:uppercase}
 .hall-link{display:inline-block;margin-top:14px;padding:11px 16px;background:var(--blue);color:#fff;font-size:10px;font-weight:800;letter-spacing:.06em;text-decoration:none}
 .hall-link:hover{opacity:.9}
-
-.hero-values{display:grid;grid-template-columns:repeat(3,1fr);margin-top:38px;max-width:560px;border-top:1px solid rgba(255,255,255,.22)}
-.hero-values>div{padding:18px 18px 0 0;border-right:1px solid rgba(255,255,255,.18)}
-.hero-values>div:not(:first-child){padding-left:18px}
-.hero-values>div:last-child{border-right:0}
-.hero-values h3{font-size:27px;color:#fff;margin:0 0 5px}
-.hero-values p{font-size:11px;line-height:1.45;color:#bcd0e1;margin:0}
-
+.attestation{margin-top:25px;padding:18px 22px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.15);max-width:480px}
+.attestation-title{font-weight:800;font-size:17px;margin-bottom:6px}
+.attestation p{margin:0 0 12px;font-size:13px;opacity:.9}
+.attestation a{display:inline-block;font-weight:800;font-size:13px;text-decoration:none}
 @media(max-width:820px){
 .wrap{width:calc(100% - 36px)}
 header{height:72px}
@@ -158,132 +154,28 @@ section{padding:75px 0}
 .photo.wide{grid-column:1/span 2}
 .values{grid-template-columns:1fr}
 .values>div{border-right:0;border-bottom:1px solid #dce5eb}
-.hero-values{grid-template-columns:1fr;margin-top:30px}
-.hero-values>div,.hero-values>div:not(:first-child){padding:13px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.18)}
-.hero-values>div:last-child{border-bottom:0}
 .price strong{font-size:70px}
 .foot{flex-direction:column;align-items:flex-start}
 .intro-grid h2,.schedule-head h2,.news-head h2,.photos-head h2,.info-grid h2,.join h2{font-size:50px}
 .practical-grid{grid-template-columns:1fr}
 .practical h2{font-size:26px}
 }
-/* BLOC UNIQUE : ACCUEIL ET PRÉSENTATION DU CLUB */
 
-.intro-fusion {
-background: var(--dark);
-color: #fff;
-}
 
-.fusion-content {
-position: relative;
-z-index: 1;
-padding-top: 75px;
-padding-bottom: 65px;
-}
+/* Affiche des 20 ans à droite du texte dans la carte de la vie du club */
+.news-grid .news-anniversary{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,38%);gap:16px;align-items:center;border-color:var(--yellow)}
+.anniversary-copy{min-width:0}
+.anniversary-poster{display:block;min-width:0;line-height:0}
+.anniversary-poster img{display:block;width:100%;height:auto;max-height:330px;object-fit:contain;object-position:center;border-radius:4px}
+.anniversary-poster:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.news-anniversary p strong{color:var(--blue)}
+.photo-unique{max-width:850px;margin:0 auto}
+.photo-unique img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain}
+.hero-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:42px;padding-top:20px;border-top:1px solid rgba(255,255,255,.22)}
+.hero-values h3{font-size:24px;margin:0 0 5px;color:var(--yellow)}
+.hero-values p{font-size:11px;line-height:1.5;color:#d7e4ef;margin:0}
+@media(max-width:900px){.news-grid .news-anniversary{grid-template-columns:minmax(0,1fr) minmax(100px,35%);gap:12px}.anniversary-poster img{max-height:340px}}
+@media(max-width:700px){.hero-values{gap:8px}.hero-values h3{font-size:20px}.hero-values p{font-size:10px}.news-grid .news-anniversary{grid-template-columns:minmax(0,1fr) minmax(100px,36%);gap:12px;padding:20px}.anniversary-poster img{max-height:310px}}
+@media(max-width:380px){.news-grid .news-anniversary{grid-template-columns:minmax(0,1fr) 100px;gap:9px;padding:16px}.news-grid .news-anniversary h3{font-size:23px}.anniversary-poster img{max-height:270px}.hero-values{grid-template-columns:1fr}}
 
-.fusion-top {
-max-width: 760px;
-}
-
-.fusion-top > p {
-max-width: 650px;
-font-size: 17px;
-line-height: 1.75;
-color: #d7e4ef;
-}
-
-.fusion-top > p strong {
-display: inline;
-color: var(--yellow);
-}
-
-.fusion-bottom {
-margin-top: 75px;
-padding-top: 45px;
-border-top: 1px solid rgba(255,255,255,.22);
-max-width: 950px;
-}
-
-.fusion-bottom .section-label {
-margin-bottom: 22px;
-}
-
-.fusion-bottom h2 {
-color: #fff;
-}
-
-.fusion-bottom h2 em {
-color: var(--yellow);
-}
-
-.fusion-description {
-max-width: 680px;
-margin-top: 25px;
-color: #d7e4ef;
-font-size: 15px;
-line-height: 1.8;
-}
-
-.fusion-values {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-margin-top: 40px;
-border-top: 1px solid rgba(255,255,255,.22);
-}
-
-.fusion-values > div {
-padding: 22px 20px 0 0;
-border-right: 1px solid rgba(255,255,255,.18);
-}
-
-.fusion-values > div:not(:first-child) {
-padding-left: 20px;
-}
-
-.fusion-values > div:last-child {
-border-right: 0;
-}
-
-.fusion-values h3 {
-font-size: 30px;
-color: var(--yellow);
-margin: 0 0 8px;
-}
-
-.fusion-values p {
-font-size: 12px;
-line-height: 1.6;
-color: #d7e4ef;
-margin: 0;
-}
-
-@media (max-width: 820px) {
-.fusion-content {
-padding-top: 50px;
-padding-bottom: 45px;
-}
-
-```
-.fusion-bottom {
-    margin-top: 50px;
-    padding-top: 35px;
-}
-
-.fusion-values {
-    grid-template-columns: 1fr;
-}
-
-.fusion-values > div,
-.fusion-values > div:not(:first-child) {
-    padding: 18px 0;
-    border-right: 0;
-    border-bottom: 1px solid rgba(255,255,255,.18);
-}
-
-.fusion-values > div:last-child {
-    border-bottom: 0;
-}
-```
-
-}
 
